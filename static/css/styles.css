@@ -1,0 +1,20 @@
+body {
+	background: #E6E6E6;
+}
+.container {
+	background: #FFF;	
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	height: 500px;
+	margin: 0 auto;
+	width: 900px;
+}
+.capas {
+	border: 1px solid #000;
+	display: inline-block;
+	height: 500px;
+	vertical-align: top;
+	width: 430px;
+}
