@@ -18,3 +18,7 @@ body {
 	vertical-align: top;
 	width: 430px;
 }
+#form {
+	border-bottom: solid 1px #000;
+	height: 250px;
+}
