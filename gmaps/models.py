@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.forms import ModelForm
 
 class Ubicacion(models.Model):
 	nombre = models.CharField(max_length=200)
@@ -10,3 +11,8 @@ class Ubicacion(models.Model):
 
 	def __unicode__(self):
 		return self.nombre
+
+
+class UbicacionForm(ModelForm):
+	class Meta:
+		model = Ubicacion
