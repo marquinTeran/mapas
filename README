@@ -2,3 +2,6 @@ Aplicacion usando el API de google maps
 
 Una vez credo el modelo procedemos a crear la base de datos a partir del modelo creado :
 $ python manage.py syncdb
+
+Para poder correr nuestro proyecto lo hacemos con el siguiente comando:
+$ python manage.py runserver
