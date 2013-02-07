@@ -4,7 +4,7 @@
 	<div id="mapa" class="capas"></div>
 	<div id="datos" class="capas">
 		<div id="form">
-			<form action="post">{% csrf_token %}
+			<form action="/coords/save" id="form_coords" method="post">{% csrf_token %}
 				{{ form.as_p }}
 				<p>
 					<input type="submit" value="Guardar direcci&oacute;n">

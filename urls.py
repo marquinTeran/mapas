@@ -7,6 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('mapas.gmaps.views',
     # Examples:
     url(r'^$', 'index', name='index'),
+    url(r'^coords/save$', 'coords_save', name='coords_save'),
     # url(r'^mapas/', include('mapas.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

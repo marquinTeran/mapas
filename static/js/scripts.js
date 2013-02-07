@@ -49,5 +49,18 @@ $(function (){
         	$("#id_lat").val( markerCoords.lat() );
         	$("#id_lng").val( markerCoords.lng() );
         }
+
+        $("#form_coords").submit(function(e){
+        	e.preventDefault();
+
+        	$.post('/coords/save', $(this).serialize(), function(data){
+        		if(data.ok)
+        		{
+
+        		} else {
+        			alert(data.msg);
+        		}
+        	}, 'json');
+        });
 	}
 });
