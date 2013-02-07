@@ -22,3 +22,23 @@ body {
 	border-bottom: solid 1px #000;
 	height: 250px;
 }
+#data {
+	text-align: left;
+	max-height: 230px;
+	overflow: auto;
+}
+#ubicaciones {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+#ubicaciones li {
+	color: #336699;
+	font-family: "Trebuchet MS", Arial, Helvetica;
+}
+#ubicaciones li:nth-child(even) {
+	background: #F5ECCE 
+}
+#ubicaciones li:nth-child(odd) {
+	background: #F8E0E0
+}

@@ -11,6 +11,12 @@
 				</p>
 			</form>
 		</div>
-		<div id="data"></div>
+		<div id="data">
+			<ul id='ubicaciones'>
+			{% for Ubicacion in Ubicaciones %}
+			<li>{{ Ubicacion.nombre }} {{ Ubicacion.user }} - hace {{ Ubicacion.fecha|timesince }}</li>
+			{% endfor %}
+			</ul>
+		</div>
 	</div>
 {% endblock %}

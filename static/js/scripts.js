@@ -56,7 +56,8 @@ $(function (){
         	$.post('/coords/save', $(this).serialize(), function(data){
         		if(data.ok)
         		{
-
+        			$('#data').html(data.msg);
+        			$('#form_coords').each(function(){ this.reset() });
         		} else {
         			alert(data.msg);
         		}
